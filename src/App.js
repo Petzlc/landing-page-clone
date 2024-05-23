@@ -1,5 +1,17 @@
-import './App.css';
+import styles from './App.module.scss';
 
 export default function App() {
-  return <div>Hello world!</div>;
+  return (
+    <div className={styles.app}>
+      <header>
+        <nav>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  );
 }

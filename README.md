@@ -4,7 +4,7 @@ Rebuild it in React (looking at the code as little as possible).
 
 ## TODO
 
-- [ ] Choose a landing page from [Landingfolio](https://www.landingfolio.com/)
+- [x] Choose a landing page from [Landingfolio](https://www.landingfolio.com/) (https://www.frase.io/?ref=landingfolio)
 - [ ] Copy all elements of the landing page
 - [ ] Style the elements
 
