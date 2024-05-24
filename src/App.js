@@ -5,8 +5,10 @@ export default function App() {
     <div className={styles.app}>
       <header>
         <div>
-          <img></img>
-          <a>frase</a>
+          <a>
+            <img></img>
+            frase
+          </a>
         </div>
         <nav>
           <ul>
@@ -29,11 +31,13 @@ export default function App() {
       </header>
       <main>
         <div>
-          <h1>How content creators do SEO</h1>
-          <p>
-            Frase empowers content creators to go fom keyword to
-            well-researched, SEO-optimized articles faster and better
-          </p>
+          <hgroup>
+            <h1>How content creators do SEO</h1>
+            <p>
+              Frase empowers content creators to go fom keyword to
+              well-researched, SEO-optimized articles faster and better
+            </p>
+          </hgroup>
           <a href="/" class="button">
             Get Started for Free
           </a>{' '}
@@ -73,11 +77,13 @@ export default function App() {
           </ul>
         </div>
         <div>
-          <h2>Research-based AI content you can trust</h2>
-          <p>
-            Analyse search queries and generate research-driven SEO content with
-            AI
-          </p>
+          <hgroup>
+            <h2>Research-based AI content you can trust</h2>
+            <p>
+              Analyse search queries and generate research-driven SEO content
+              with AI
+            </p>
+          </hgroup>
         </div>
         <div>
           {' '}
@@ -85,8 +91,12 @@ export default function App() {
           <video></video>
         </div>
         <div>
-          <h2>Go faster with a unified SEO content workflow</h2>
-          <p>Research, outline, write and optimize content in the same place</p>
+          <hgroup>
+            <h2>Go faster with a unified SEO content workflow</h2>
+            <p>
+              Research, outline, write and optimize content in the same place
+            </p>
+          </hgroup>
         </div>
         <div>
           <ul>
@@ -123,11 +133,13 @@ export default function App() {
           </div>
         </div>
         <dic>
-          <h2>Build a content engine that works</h2>
-          <p>
-            Develop a repeatable content creation process that you can manage at
-            scale.
-          </p>
+          <hgroup>
+            <h2>Build a content engine that works</h2>
+            <p>
+              Develop a repeatable content creation process that you can manage
+              at scale.
+            </p>
+          </hgroup>
         </dic>
         <div>
           {' '}
@@ -196,11 +208,13 @@ export default function App() {
         </div>
         <div>
           <div>
-            <h2>For content creators that put research first</h2>
-            <p>
-              Breakthe "commodity cage" through content that stands out from the
-              crowd.
-            </p>
+            <hgroup>
+              <h2>For content creators that put research first</h2>
+              <p>
+                Breakthe "commodity cage" through content that stands out from
+                the crowd.
+              </p>
+            </hgroup>
           </div>
           <a href="/" class="button">
             Get Started for Free
