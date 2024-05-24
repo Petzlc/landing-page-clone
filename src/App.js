@@ -15,7 +15,7 @@ export default function App() {
             </li>
             <li>
               <a href="/">Resources</a>{' '}
-              {/* another list appears when you hover*/}
+              {/* dropdown-list appears when you hover. in the dropdown-list more <a> with an effect on the mouse when hovering. other then that no effects*/}
             </li>
             <li>
               <a href="/">Login</a>
@@ -206,7 +206,100 @@ export default function App() {
         </a>{' '}
         {/* hover effect and color change after clicking */}
       </div>
-      <footer></footer>
+      <div>
+        <footer>
+          <div>
+            <h3>Frase</h3>
+            <p></p>
+          </div>
+          <div></div> {/* white space */}
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>
+                <a href="/">About</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+              <li>
+                <a href="/">Pricing</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+              <li>
+                <a href="/">Affiliates</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+              <li>
+                <a href="/">Contact Us</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+              <li>
+                <a href="/">Status</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Resources</h3>
+            <ul>
+              <li>
+                <a href="/">Attend Weekly Webinar</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+              <li>
+                <a href="/">Blog</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+              <li>
+                <a href="/">Help Center</a>{' '}
+                {/* underline when hovering. no effect after clicking*/}
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Follow us</h3>
+            <ul>
+              <li>
+                <a href="/">
+                  {' '}
+                  {/* no effects */}
+                  <span>
+                    <svg></svg>
+                  </span>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  {' '}
+                  {/* no effects */}
+                  <span>
+                    <svg></svg>
+                  </span>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  {' '}
+                  {/* no effects */}
+                  <span>
+                    <svg></svg>
+                  </span>
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <p>© 2024 Frase, Inc</p>
+          </div>
+          <div>
+            <a href="/">Privacy Policy</a> {/* no effects */}
+            <a href="/">Terms of Use</a>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
