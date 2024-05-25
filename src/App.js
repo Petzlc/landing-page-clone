@@ -2,29 +2,45 @@ import styles from './App.module.scss';
 
 export default function App() {
   return (
-    <div className={styles.app}>
-      <header>
+    <div>
+      <header /*style={{ backgroundColor: '#2d3747' }}*/>
         <div>
-          <a>
-            <img></img>
-            frase
+          <a href="http://localhost:3001/">
+            <picture>
+              <img
+                src="/img/ImgFraseLogo.png"
+                alt="Frase Logo"
+                width="100"
+                // height="255"
+                // src="https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white.png"
+                // alt="Frase Logo"
+                // srcSet="https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white.png 901w, https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white-300x85.png 300w, https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white-768x217.png 768w"
+                // sizes="(max-width: 901px) 100vw, 901px"
+              />
+            </picture>
           </a>
         </div>
         <nav>
           <ul>
             <li>
-              <a href="/">Pricing</a>
+              <a href="/" id="top-link1">
+                Pricing
+              </a>
             </li>
             <li>
-              <a href="/">Resources</a>{' '}
+              <a href="/" id="top-links2">
+                Resources
+              </a>{' '}
               {/* dropdown-list appears when you hover. in the dropdown-list more <a> with an effect on the mouse when hovering. other then that no effects*/}
             </li>
             <li>
-              <a href="/">Login</a>
+              <a href="/" id="top-links3">
+                Login
+              </a>
             </li>
           </ul>
         </nav>
-        <a href="/" class="button">
+        <a href="/" className="button">
           Try for Free
         </a>{' '}
         {/* hover effect, and color change after clicking */}
@@ -38,7 +54,7 @@ export default function App() {
               well-researched, SEO-optimized articles faster and better
             </p>
           </hgroup>
-          <a href="/" class="button">
+          <a href="/" className="button">
             Get Started for Free
           </a>{' '}
           {/* hover effect and color change after clicking */}
@@ -216,7 +232,7 @@ export default function App() {
               </p>
             </hgroup>
           </div>
-          <a href="/" class="button">
+          <a href="/" className="button">
             Get Started for Free
           </a>{' '}
           {/* hover effect and color change after clicking */}
