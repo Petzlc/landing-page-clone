@@ -1,14 +1,26 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer reset {
+  /*with @layer you can set a priority if you then put @layer reset, nextlayer,... . @layer reset in this case will always have higher priority to nextlayer if they clash and so on*/
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img,
+  video,
+  canvas,
+  iframe {
+    max-width: 100%;
+  }
 }
 
-img,
-video,
-canvas,
-iframe {
-  max-width: 100%;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:link,              /* inherits the color of the parent, so all the links inherit the font-color */
+a:visited {
+  color: inherit;
 }
