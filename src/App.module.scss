@@ -4,6 +4,14 @@
   justify-content: space-between;
   color: white;
   font-size: 18px;
+  // position: absolute;     //This destroys my container
+  // left: 0;
+  // right: 0;
+
+  // .container {
+  //   max-width: 73.125rem;
+  //   max-height: 3rem;
+  // }
 }
 
 .section {
@@ -13,7 +21,9 @@
 .container {
   max-width: 73.125rem;
   max-height: 3rem;
+  margin: 0 auto;
 }
+
 .topLinks {
   font-size: 16px;
   text-decoration: none;

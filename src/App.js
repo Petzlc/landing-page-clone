@@ -10,6 +10,10 @@ export default function App() {
           {' '}
           {/* wrap the header in a container and set width and height to structure the top part */}
           <header className={styles.header}>
+            {/* <section className={styles.section}> */}{' '}
+            {/* put the section in the header after i had the header wrapped in the section first and set width and height to structure the top part */}
+            {/* <div className={styles.container}> */}{' '}
+            {/* put the container in the header after i had the header wrapped in the section first and set width and height to structure the top part */}
             <div>
               <a href="http://localhost:3001/">
                 <picture>
@@ -53,6 +57,8 @@ export default function App() {
                 </li>
               </ul>
             </nav>
+            {/* </div> */}
+            {/* </section> */}
           </header>
         </div>
       </section>
