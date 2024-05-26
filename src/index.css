@@ -18,6 +18,7 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.8;
 }
 
 a:link,              /* inherits the color of the parent, so all the links inherit the font-color */

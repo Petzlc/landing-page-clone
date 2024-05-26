@@ -292,8 +292,12 @@ export default function App() {
                 style={{ borderRadius: '50%' }}
               />
             </picture>
-            <p></p>
-            <p></p>
+            <p>
+              <span className={styles.span}>Brendan Hufford</span>
+            </p>
+            <p className={styles.description}>
+              Content Marketer @ ActiveCampaign
+            </p>
           </div>
           <div className={styles.person}>
             <picture className={styles.person}>
@@ -304,8 +308,10 @@ export default function App() {
                 style={{ borderRadius: '50%' }}
               />
             </picture>
-            <p></p>
-            <p></p>
+            <p>
+              <span className={styles.span}>Kevin Indig</span>
+            </p>
+            <p className={styles.description}>Director of SEO @ Shopify</p>
           </div>
         </div>
         <div>
