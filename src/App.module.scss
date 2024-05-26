@@ -1,8 +1,19 @@
-header {
-  background-color: #2d3747;
-  display: block;
+.header {
+  background-color: #081e3d;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 18px;
 }
 
+.section {
+  // for the header to have the background color over the full width not only for the container
+  background-color: #081e3d;
+}
+.container {
+  max-width: 73.125rem;
+  max-height: 3rem;
+}
 // #top-link1 {   //doesn't work
 //   color: azure;
 //   font-weight: bold;
@@ -12,18 +23,18 @@ header {
 // a {                // works but only for all <a> and the footer <a> are default black
 //   color: white;
 // }
-main {
+.main {
   background: linear-gradient(360deg, #000517 25%, #092144 100%);
   text-align: center;
   display: block;
 }
-h1 {
+.h1 {
   display: block;
   // text-align: center;
   color: white;
 }
 
-h2 {
+.h2 {
   display: block;
   text-align: center;
   color: white;
@@ -34,6 +45,10 @@ p {
   text-align: center;
 }
 
+.pResearch {
+  font-size: 19px;
+  color: rgb(180, 188, 208);
+}
 footer {
   text-align: center;
   display: inline;

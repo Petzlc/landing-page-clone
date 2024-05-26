@@ -3,52 +3,63 @@ import styles from './App.module.scss';
 export default function App() {
   return (
     <div>
-      <header /*style={{ backgroundColor: '#2d3747' }}*/>
-        <div>
-          <a href="http://localhost:3001/">
-            <picture>
-              <img
-                src="/img/ImgFraseLogo.png"
-                alt="Frase Logo"
-                width="100"
-                // height="255"
-                // src="https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white.png"
-                // alt="Frase Logo"
-                // srcSet="https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white.png 901w, https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white-300x85.png 300w, https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white-768x217.png 768w"
-                // sizes="(max-width: 901px) 100vw, 901px"
-              />
-            </picture>
-          </a>
+      <section className={styles.section}>
+        {' '}
+        {/* for the header to have the background color over the full width not only for the container */}
+        <div className={styles.container}>
+          {' '}
+          {/* wrap the header in a container and set width and height to structure the top part */}
+          <header className={styles.header}>
+            <div>
+              <a href="http://localhost:3001/">
+                <picture>
+                  <img
+                    src="/img/ImgFraseLogo.png"
+                    alt="Frase Logo"
+                    width="100"
+                    // height="255"
+                    // src="https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white.png"
+                    // alt="Frase Logo"
+                    // srcSet="https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white.png 901w, https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white-300x85.png 300w, https://www.frase.io/wp-content/uploads/2020/11/cropped-frase-logo-white-768x217.png 768w"
+                    // sizes="(max-width: 901px) 100vw, 901px"
+                  />
+                </picture>
+              </a>
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="/" id="top-link1">
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="/" id="top-links2">
+                    Resources
+                  </a>{' '}
+                  {/* dropdown-list appears when you hover. in the dropdown-list more <a> with an effect on the mouse when hovering. other then that no effects*/}
+                </li>
+                <li>
+                  <a href="/" id="top-links3">
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="button">
+                    {' '}
+                    {/* hover effect, and color change after clicking */}
+                    Try for Free
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="/" id="top-link1">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="/" id="top-links2">
-                Resources
-              </a>{' '}
-              {/* dropdown-list appears when you hover. in the dropdown-list more <a> with an effect on the mouse when hovering. other then that no effects*/}
-            </li>
-            <li>
-              <a href="/" id="top-links3">
-                Login
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a href="/" className="button">
-          Try for Free
-        </a>{' '}
-        {/* hover effect, and color change after clicking */}
-      </header>
-      <main>
+      </section>
+      <main className={styles.main}>
         <div>
           <hgroup>
-            <h1>How content creators do SEO</h1>
+            <h1 className={styles.h1}>How content creators do SEO</h1>
             <p>
               Frase empowers content creators to go fom keyword to
               well-researched, SEO-optimized articles faster and better
@@ -58,15 +69,15 @@ export default function App() {
             Get Started for Free
           </a>{' '}
           {/* hover effect and color change after clicking */}
-          <p></p>
+          <p>No credit card required</p>
         </div>
         <div>
           {' '}
           {/* maybe better to put it in the <div> with h1,h2?? */}
-          <img></img>
+          <img src="/img/image-screen-v.3.png" alt="" width="1024px" />
         </div>
         <div>
-          <p></p>
+          <p>Trusted by 30,000+ content, SEO, and marketing teams including…</p>
         </div>
         <div>
           {' '}
@@ -94,7 +105,9 @@ export default function App() {
         </div>
         <div>
           <hgroup>
-            <h2>Research-based AI content you can trust</h2>
+            <h2 className={styles.h2}>
+              Research-based AI content you can trust
+            </h2>
             <p>
               Analyse search queries and generate research-driven SEO content
               with AI
@@ -108,7 +121,9 @@ export default function App() {
         </div>
         <div>
           <hgroup>
-            <h2>Go faster with a unified SEO content workflow</h2>
+            <h2 className={styles.h2}>
+              Go faster with a unified SEO content workflow
+            </h2>
             <p>
               Research, outline, write and optimize content in the same place
             </p>
@@ -136,21 +151,43 @@ export default function App() {
           {' '}
           {/* Textfields and img changing after clicking on 4 buttons above */}
           <div>
-            <h1></h1>
-            <p></p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-          <div>
-            <img></img>
+            <div>
+              <h1 className={styles.h1}>SERP research made simple</h1>
+              <p className={styles.pResearch}>
+                Stop aimlessly clicking through SERP results – Frase saves you
+                time by analyzing and condensing content from the top search
+                results of any query.
+              </p>
+              <ul>
+                <li className={styles.pResearch}>
+                  Analyze SEO competitors’ content easily via an intuitive
+                  research panel.
+                </li>
+                <li className={styles.pResearch}>
+                  Visualize key SERP metrics like word count, domain rating, and
+                  heading count.
+                </li>
+                <li className={styles.pResearch}>
+                  Use AI to generate full-length, optimized content briefs in 6
+                  seconds.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <picture>
+                <img
+                  src="/img/image-screen-v.2-02.png"
+                  alt=""
+                  width="580"
+                  height="auto"
+                />
+              </picture>
+            </div>
           </div>
         </div>
         <dic>
           <hgroup>
-            <h2>Build a content engine that works</h2>
+            <h2 className={styles.h2}>Build a content engine that works</h2>
             <p>
               Develop a repeatable content creation process that you can manage
               at scale.
@@ -225,7 +262,9 @@ export default function App() {
         <div>
           <div>
             <hgroup>
-              <h2>For content creators that put research first</h2>
+              <h2 className={styles.h2}>
+                For content creators that put research first
+              </h2>
               <p>
                 Breakthe "commodity cage" through content that stands out from
                 the crowd.
@@ -240,12 +279,12 @@ export default function App() {
       </main>
       <footer>
         <div>
-          <h3>Frase</h3>
+          <h3 className={styles.h3}>Frase</h3>
           <p></p>
         </div>
         <div></div> {/* white space */}
         <div>
-          <h3>Company</h3>
+          <h3 className={styles.h3}>Company</h3>
           <ul>
             <li>
               <a href="/">About</a>{' '}
@@ -270,7 +309,7 @@ export default function App() {
           </ul>
         </div>
         <div>
-          <h3>Resources</h3>
+          <h3 className={styles.h3}>Resources</h3>
           <ul>
             <li>
               <a href="/">Attend Weekly Webinar</a>{' '}
@@ -287,7 +326,7 @@ export default function App() {
           </ul>
         </div>
         <div>
-          <h3>Follow us</h3>
+          <h3 className={styles.h3}>Follow us</h3>
           <ul>
             <li>
               <a href="/">
