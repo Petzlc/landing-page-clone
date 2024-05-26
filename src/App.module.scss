@@ -24,6 +24,12 @@
   margin: 0 auto;
 }
 
+.firstList {
+  display: flex;
+  list-style: none;
+  justify-content: space-between; //tried to put some space in between but somehow doesn't work
+}
+
 .topLinks {
   font-size: 16px;
   text-decoration: none;

@@ -31,7 +31,7 @@ export default function App() {
               </a>
             </div>
             <nav>
-              <ul>
+              <ul className={styles.firstList}>
                 <li>
                   <a href="/" className={styles.topLinks}>
                     Pricing
