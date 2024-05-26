@@ -14,11 +14,12 @@
   max-width: 73.125rem;
   max-height: 3rem;
 }
-// #top-link1 {   //doesn't work
-//   color: azure;
-//   font-weight: bold;
-//   display: block;
-// }
+.topLinks {
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+}
 
 // a {                // works but only for all <a> and the footer <a> are default black
 //   color: white;
@@ -49,6 +50,13 @@ p {
   font-size: 19px;
   color: rgb(180, 188, 208);
 }
+
+// .person {
+// want to make the pictures round but doesn't work. works with style {{}} in app.js though.
+//   border-radius: 50%;
+//   overflow: hidden;
+// }
+
 footer {
   text-align: center;
   display: inline;

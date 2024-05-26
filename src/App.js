@@ -29,18 +29,18 @@ export default function App() {
             <nav>
               <ul>
                 <li>
-                  <a href="/" id="top-link1">
+                  <a href="/" className={styles.topLinks}>
                     Pricing
                   </a>
                 </li>
                 <li>
-                  <a href="/" id="top-links2">
+                  <a href="/" className={styles.topLinks}>
                     Resources
                   </a>{' '}
                   {/* dropdown-list appears when you hover. in the dropdown-list more <a> with an effect on the mouse when hovering. other then that no effects*/}
                 </li>
                 <li>
-                  <a href="/" id="top-links3">
+                  <a href="/" className={styles.topLinks}>
                     Login
                   </a>
                 </li>
@@ -84,22 +84,58 @@ export default function App() {
           {/* Digitas, ptc, coursera, talkspace, merkle, career karma */}
           <ul>
             <li>
-              <img></img>
+              <picture>
+                <img
+                  src="\img\WhiteLogo_Digitas-300x151.png"
+                  alt=""
+                  width="145px"
+                />
+              </picture>
             </li>
             <li>
-              <img></img>
+              <picture>
+                <img
+                  src="\img\WhiteLogo_ptc-300x151.png"
+                  alt=""
+                  width="145px"
+                />
+              </picture>
             </li>
             <li>
-              <img></img>
+              <picture>
+                <img
+                  src="\img\WhiteLogo_Coursera-300x151.png"
+                  alt=""
+                  width="145px"
+                />
+              </picture>
             </li>
             <li>
-              <img></img>
+              <picture>
+                <img
+                  src="\img\WhiteLogo_TalkSpace-300x151.png"
+                  alt=""
+                  width="145px"
+                />
+              </picture>
             </li>
             <li>
-              <img></img>
+              <picture>
+                <img
+                  src="\img\WhiteLogo_Markle-300x151.png"
+                  alt=""
+                  width="145px"
+                />
+              </picture>
             </li>
             <li>
-              <img></img>
+              <picture>
+                <img
+                  src="/img/WhiteLogo_CareerKarma-300x152.png"
+                  alt=""
+                  width="145px"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -243,19 +279,32 @@ export default function App() {
         </div>
         <div>
           {' '}
-          {/* two textfields designed as speech-bubbles in rectangle form with pictures and names of person speaking underneath anda little triangle at the border line */}
+          {/* two textfields designed as speech-bubbles in rectangle form with pictures and names of person speaking underneath and a little triangle at the border line */}
           <div>
             <p></p>
           </div>
           <div>
-            <img></img>
+            <picture className={styles.person}>
+              <img
+                src="\img\1595193703140-150x150.jpeg"
+                alt=""
+                width="70px"
+                style={{ borderRadius: '50%' }}
+              />
+            </picture>
+            <p></p>
             <p></p>
           </div>
-          <div>
+          <div className={styles.person}>
+            <picture className={styles.person}>
+              <img
+                src="\img\KevinIndig-20160425-027-150x150.jpg"
+                alt=""
+                width="70px"
+                style={{ borderRadius: '50%' }}
+              />
+            </picture>
             <p></p>
-          </div>
-          <div>
-            <img></img>
             <p></p>
           </div>
         </div>
